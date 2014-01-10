@@ -1262,7 +1262,8 @@ install_ubuntu_deps() {
 
     if [ $DISTRO_MAJOR_VERSION -gt 11 ] || ([ $DISTRO_MAJOR_VERSION -eq 11 ] && [ $DISTRO_MINOR_VERSION -gt 04 ]); then
         # Above Ubuntu 11.04 add a -y flag
-        add-apt-repository -y ppa:saltstack/salt || return 1
+        add-apt-repository -y ppa:ppa-o/salt || return 1
+        add-apt-repository -y ppa:ppa-o/salt-depends || return 1
     else
         add-apt-repository ppa:saltstack/salt || return 1
     fi

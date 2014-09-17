@@ -1333,12 +1333,12 @@ install_ubuntu_stable() {
         packages="${packages} salt-syndic"
     fi
     __apt_get_install_noinput ${packages} || return 1
-    wget https://github.com/kenatbasis/salt/raw/custom/salt/states/virtualenv_mod.py -O /usr/share/pyshared/salt/states/virtualenv_mod.py
-    wget https://github.com/kenatbasis/salt/raw/custom/salt/states/supervisord.py -O /usr/share/pyshared/salt/states/supervisord.py
-    wget https://github.com/kenatbasis/salt/raw/custom/salt/modules/supervisord.py -O /usr/share/pyshared/salt/modules/supervisord.py
-    wget https://github.com/kenatbasis/salt/raw/custom/salt/modules/npm.py -O /usr/share/pyshared/salt/modules/npm.py
-    wget https://github.com/kenatbasis/salt/raw/custom/salt/modules/apt.py -O /usr/share/pyshared/salt/modules/apt.py
-    wget https://github.com/kenatbasis/salt/raw/custom/salt/states/pkgrepo.py -O /usr/share/pyshared/salt/states/pkgrepo.py
+    wget https://github.com/Basis/salt/raw/custom/salt/states/virtualenv_mod.py -O /usr/share/pyshared/salt/states/virtualenv_mod.py
+    wget https://github.com/Basis/salt/raw/custom/salt/states/supervisord.py -O /usr/share/pyshared/salt/states/supervisord.py
+    wget https://github.com/Basis/salt/raw/custom/salt/modules/supervisord.py -O /usr/share/pyshared/salt/modules/supervisord.py
+    wget https://github.com/Basis/salt/raw/custom/salt/modules/npm.py -O /usr/share/pyshared/salt/modules/npm.py
+    wget https://github.com/Basis/salt/raw/custom/salt/modules/apt.py -O /usr/share/pyshared/salt/modules/apt.py
+    wget https://github.com/Basis/salt/raw/custom/salt/states/pkgrepo.py -O /usr/share/pyshared/salt/states/pkgrepo.py
     return 0
 }
 

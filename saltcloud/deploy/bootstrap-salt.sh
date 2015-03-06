@@ -1340,6 +1340,7 @@ install_ubuntu_stable() {
     wget https://github.com/Basis/salt/raw/custom/salt/modules/apt.py -O /usr/share/pyshared/salt/modules/apt.py
     wget https://github.com/Basis/salt/raw/custom/salt/states/pkgrepo.py -O /usr/share/pyshared/salt/states/pkgrepo.py
     wget https://github.com/Basis/salt/raw/custom/salt/states/pip_state.py -O /usr/share/pyshared/salt/states/pip_state.py
+    wget https://github.com/Basis/salt/raw/custom/salt/modules/pip.py -O /usr/share/pyshared/salt/modules/pip.py
     return 0
 }
 
